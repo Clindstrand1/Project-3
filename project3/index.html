@@ -1,0 +1,551 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="../../assets/ico/favicon.ico">
+
+    <title>State of Crime in the U.S.</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    
+      <link href="css/demo_table.css" rel="stylesheet">
+	<link href="css/styles.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]><script src="js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/smooth-scroll.js"></script>
+   
+  </head>
+
+  <body>
+
+
+
+    <div class="container">
+
+      <div class="row">
+        <div class="col-md-12">
+	  <h1>The State of Crime in Major United States Cities</h1>
+        </div>
+      </div>
+      
+      <div class="row" id="top">
+        <div class="col-md-12">
+	  <div class="introtext"><p>Crimes such as murder, rape, aggravated assault and burglary are unfortunately commonplace
+	  occurrences in the United States' most populous cities. Pulled from data aggregated in 2008 by the
+	  <a href="http://catalog.data.gov/dataset/2008-crime-in-the-united-states" target="blank">Federal Bureau
+	  of Investigation within the Department of Justice</a>, the following information gives insight into which
+	  crimes are committed most often and which cities have higher proportional rates of crime. The data takes into account both
+	  violent and property crimes and was pulled from the records of the most populous city from each of the 50 states and the
+	  District of Columbia.</p>
+	    <p>
+	      <div class="btn-group btn-group-justified">
+  <div class="btn-group">
+    <a data-scroll href="#mysection1"><button type="button" class="btn btn-default">What crimes are the most common?</button></a>
+  </div>
+  <div class="btn-group">
+    <a data-scroll href="#mysection2"><button type="button" class="btn btn-default">Which cities have the most crimes committed per 100 people?</button></a>
+  </div>
+  <div class="btn-group">
+    <a data-scroll href="#mysection3"><button type="button" class="btn btn-default">Which cities have the highest % of violent or property crimes?</button></a>
+  </div>
+</div>
+	    </p></div>
+        </div>
+      </div>
+      
+      <div class="row">
+	<div class="col-md-3" id="mysection1">
+	  <p class="sideheader"><div class="sidebar">Common Crimes</p>
+	  <P class="sidebartext">Property crimes like thefts are much more prevalent than violent crimes, even in these major cities.
+	  The most common crime by a landslide is larceny. Larceny, also known as theft, is distinguished from burglaries
+	  in that burglaries involve the intent to enter a building without consent with the intent of committing a crime
+	  once inside. Larceny simply involves the taking of something with the intent to deprive the owner of it permanently. </P>
+	<p class="source">Source: <a href="http://www.translegal.com/legal-english-lessons/theft-larceny-burglary-and-robbery" target="blank">TransLegal</a></p></div>
+	</div>
+	
+        <div class="col-md-9">
+	  <div id="bar" style="height: 400px; min-width: 310px; max-width: 1200px; margin: 0 auto"></div>
+        </div>
+      </div>
+      
+       <div class="row">
+	<div class="col-md-3" id="mysection2">
+	  <p class="sideheader"><div class="sidebar">Put in Proportion</p>
+	  <P class="sidebartext">A good indicator of the prevalence of crime in a city is to measure the number of crimes
+	  committed per 100 people. This ratio gives a good indicator of how many people are victims of crime in the area,
+	  rather than just totaling the number of crimes, which produces numbers that are skewed by how large the city is.
+	  For example, Birmingham, AL only has 46,740 total reported crimes to New York City's 396,838. However, for every
+	  100 people in Birmingham, roughly 20 people will be the victim of a crime, whereas in New York City, only about 5 out of
+	  100 people are victims of crimes.  </P></div>
+	</div>
+        <div class="col-md-9">
+	  <div id="bubble" style="height: 400px; min-width: 310px; max-width: 1200px; margin: 0 auto"></div>
+        </div>
+      </div>
+      
+      <div class="row">
+	<div class="col-md-3" id="mysection3">
+	  <p class="sideheader"><div class="sidebar">Violent Crime v. Property Crime</p>
+	  <P class="sidebartext">The violent crimes accounted for in this data set include murder/nonnegligent manslaughter,
+	  rape, robbery and aggravated assault. The property crimes accounted for in the data set include burglary, larceny/theft,
+	  motor vehicle theft and arson. Toggle between the two pie charts to see the cities that have the highest percentage
+	  share of each subset of crimes. Notice that most of the U.S.' largest cities are included on these charts.  </P></div>
+	</div>
+	<div class="col-md-9">
+
+	<!-- Nav tabs -->
+<ul class="nav nav-tabs">
+  <li class="active"><a href="#home" data-toggle="tab">Violent Crime</a></li>
+  <li><a href="#profile" data-toggle="tab">Property Crime</a></li>
+
+</ul>
+
+<!-- Tab panes -->
+<div class="tab-content">
+  <div class="tab-pane active" id="home"><div id="container" style=" max-width: 600px; height: 400px; margin: 0 auto"></div>
+</div>
+  <div class="tab-pane" id="profile"><div id="newcontainer" style=" max-width: 600px; height: 400px; margin: 0 auto"></div> </div>
+
+</div>
+	</div>
+	</div>
+
+      <div class="row">
+        <div class="col-md-12 tabletop">
+	  <div class="bottomtext">The Full Story: Check out the full set of data that includes the most populous city in each state along with its reported crimes. </div>
+	  <table class="tabletop" id="table"></table> 
+        </div>
+      </div>
+          
+	
+	
+      
+    </div><!-- /.container -->
+<script>
+    smoothScroll.init();
+</script>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    
+    <script src="js/jquery.dataTables.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="http://code.highcharts.com/highcharts.js"></script>
+    <script src="http://code.highcharts.com/highcharts-more.js"></script>
+<script src="http://code.highcharts.com/modules/exporting.js"></script>
+    
+     
+    <script>
+      aaData = new Array;
+      
+      $(document).ready(function() {
+	$("#message").text("DOM Loaded and Ready");
+        startLoadXml();
+	
+		
+      });
+      
+      
+      function startLoadXml() {
+  $("#message").text("loadXML has begun!");
+  $.ajax({
+    type: "GET",
+    url: "state.xml",
+    dataType: "xml",
+    success: parseXml
+  });
+} //close loadXML
+
+
+
+function parseXml(xml)
+{
+	var htmlBottom = "";
+	var htmlList = "";
+	
+	
+  $(xml).find("Table1").each(function(index)
+  {
+  
+
+      //Builds table data
+      personArray = new Array;
+      personArray.push($(this).find("State").text(), $(this).find("City").text(), $(this).find("Population").text()
+      ,  $(this).find("Murder_x0020_and_x0020_nonnegligent_x0020_manslaughter").text(),
+      $(this).find("Forcible_x0020_rape").text(), $(this).find("Robbery").text(), $(this).find("Aggravated_x0020_assault").text(),
+       $(this).find("Burglary").text(), $(this).find("Larceny-theft").text(),
+      $(this).find("Motor_x0020_vehicle_x0020_theft").text(), $(this).find("Arson").text());
+      aaData.push(personArray);
+  });
+  aoColumns = new Array;
+  aoColumns = [
+    { "sTitle": "State" },
+    { "sTitle": "City" },
+    { "sTitle": "Population" },
+    { "sTitle": "Murder" },
+    { "sTitle": "Forcible Rape" },
+    { "sTitle": "Robbery" },
+    { "sTitle": "Aggravated Assault" },
+    { "sTitle": "Burglary" },
+    { "sTitle": "Larceny/Theft" },
+    { "sTitle": "Motor Vehicle Theft" },
+    { "sTitle": "Arson" }
+  ]
+  console.log(aoColumns);
+  $("#person_table").html( '<table cellpadding="0" cellspacing="0" border="0" class="display" id="person_table"></table>' );
+  $("#nav_list").append(htmlList); 
+  $("#person").append(htmlBottom);
+  
+  
+  $('#table').dataTable( {
+    "aaData": aaData,
+    "aoColumns": aoColumns
+  });
+}
+
+
+$('#myTab a').click(function (e) {
+  e.preventDefault()
+  $(this).tab('show')
+})
+
+    
+$(function piechart1() {
+    $('#container').highcharts({
+        chart: {
+            plotBackgroundColor: null,
+            plotBorderWidth: null,
+            plotShadow: false
+        },
+	colors: [
+   '#000000', 
+   '#E6505C',
+   '#C4C4C4',
+   '#FF8287', 
+   '#a9a9a9', 
+],
+        title: {
+            text: 'Top 5 Cities for Violent Crime',
+	    style:{
+		  color: '#E6505C'
+		}
+        },
+        tooltip: {
+    	    pointFormat: 'accounts for <b>{point.z}%</b> of violent crimes in large U.S. cities'
+        },
+        plotOptions: {
+            pie: {
+                allowPointSelect: true,
+                cursor: 'pointer',
+                dataLabels: {
+                    enabled: true,
+                    color: '#000000',
+                    connectorColor: '#000000',
+                    format: '<b>{point.name}</b>: {point.z}%'
+                }
+            }
+        },
+        series: [{
+            type: 'pie',
+            name: 'Browser share',
+            data: [
+		{
+                    name: 'New York, NY',
+                    y: 30.99,
+		    z: 13.74,
+		  
+                    
+                },
+		{
+                    name: 'Chicago, IL',
+                    y: 22.88,
+		    z: 10.14,
+                    
+                },
+                {
+                    name: 'Los Angeles, CA',
+                    y: 16.99,
+		    z: 7.53,
+                    
+                },
+		{
+                    name: 'Houston, TX',
+                    y: 15.85,
+		    z: 7.03,
+                    
+                },
+                {
+                    name: 'Philadelphia, PA',
+                    y: 13.29,
+		    z: 5.89,
+                    
+                }
+            ]
+        }]
+    });
+    
+    $(function () {
+    $('#newcontainer').highcharts({
+        chart: {
+            plotBackgroundColor: null,
+            plotBorderWidth: null,
+            plotShadow: false
+        },
+	colors: [
+   '#000000', 
+   '#E6505C',
+   '#C4C4C4',
+   '#FF8287', 
+   '#a9a9a9', 
+],
+        title: {
+            text: 'Top 5 Cities for Property Crime',
+	    style:{
+		  color: '#E6505C'
+		}
+        },
+        tooltip: {
+    	    pointFormat: 'accounts for <b>{point.z}%</b> of property crimes in large U.S. cities'
+        },
+        plotOptions: {
+            pie: {
+                allowPointSelect: true,
+                cursor: 'pointer',
+                dataLabels: {
+                    enabled: true,
+                    color: '#000000',
+                    connectorColor: '#000000',
+                    format: '<b>{point.name}</b>: {point.z}%'
+                }
+            }
+        },
+        series: [{
+            type: 'pie',
+            name: 'Browser share',
+            data: [
+                {
+                    name: 'New York, NY',
+                    y: 26.07,
+		    z: 9.27,
+                },
+		{
+                    name: 'Los Angeles, CA',
+                    y: 17.52,
+		    z: 6.23,
+                },
+		{
+                    name: 'Phoenix, AZ',
+                    y: 14.37,
+		    z: 5.11,
+                },
+		{
+                    name: 'Houston, TX',
+                    y: 19.25,
+		    z: 6.85,
+                },
+		{
+                    name: 'Chicago, IL',
+                    y: 22.78,
+		    z: 7.10,
+                }
+            ]
+        }]
+    });
+});
+    
+    
+    
+    $(function bubblechart() {
+    $('#bubble').highcharts({
+
+	    chart: {
+	        type: 'bubble',
+	        zoomType: 'xy'
+	    },
+	    
+	    yAxis: {
+                min: 0,
+                title: {
+                    text: 'Number of crimes per 100 people',
+		    style: {
+                    color: 'black'
+                }
+            }
+            },
+	    
+	    xAxis: {
+                min: 0,
+                title: {
+                    text: 'Total crimes comitted',
+		    style: {
+                    color: 'black'
+                }
+            }
+                
+            },
+
+	    title: {
+	    	text: 'Top 10 Most Dangerous Cities',
+		style:{
+		  color: '#E6505C'
+		}
+	    },
+	
+	    tooltip: {
+                pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name} </td>' +
+                    '<td style="padding:0"></td></tr>',
+		headerFormat: '<span style="font-size:10px">Number of crimes per 100 people: {point.y}</span><span style="font-size:10px"><br>Total number of crimes: {point.x}</span><table>',
+                footerFormat: '</table>',
+                shared: true,
+                useHTML: true
+	    },
+	    
+	    series: [{
+                name: 'Indianapolis, IN',
+                data: [[118191,14.62,5]]
+    
+            },
+	    
+	     {
+                name: 'Milwaukee, WI',
+                data: [[88119,14.63,25]]
+    
+            },
+	    {
+                name: 'Kansas City, MO',
+                data: [[69391,15.37,125]]
+    
+            },
+	    {
+                name: 'Detroit, MI',
+                data: [[141737,15.37,625]]
+    
+            },
+	    {
+                name: 'Jackson, MS',
+                data: [[29455,16.86,3125]]
+    
+            },
+	    {
+                name: 'Atlanta, GA',
+                data: [[92909,17.43,15625]]
+    
+            },
+	    {
+                name: 'Little Rock, AK',
+                data: [[34807,18.52,78125]]
+    
+            },
+	    {
+                name: 'Salt Lake City, UT',
+                data: [[35236,19.52,390625]]
+    
+            },
+	    {
+                name: 'Memphis, TN',
+                data: [[133742,19.9,1953125]]
+    
+            },
+	    
+	     {
+                name: 'Birmingham, AL',
+                data: [[46740,20.47,9765625]]
+    
+            }]
+	
+	});
+    
+});
+Highcharts.setOptions({
+     colors: ['#E6505C']
+    }); 
+    $(function barchart() {
+        $('#bar').highcharts({
+            chart: {
+                type: 'column'
+            },
+            title: {
+                text: 'Frequency of Crimes',
+		style:{
+		  color: '#E6505C'
+		}
+            },
+          
+            xAxis: {
+                categories: [
+                    'Murder and nonnegligent manslaughter',
+                    'Forcible rape',
+                    'Robbery',
+                    'Aggravated assault',
+                    'Burglary',
+                    'Larceny/Theft',
+                    'Motor vehicle theft',
+                    'Arson'
+                ]
+            },
+            yAxis: {
+                min: 0,
+                title: {
+                    text: 'Number of reports',
+		    style: {
+                    color: 'black'
+                }
+                }
+            },
+	    
+	
+            tooltip: {
+                headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+                pointFormat: '<tr><td style="color:{series.color};padding:0"></td>' +
+                    '<td style="padding:0"><b>{point.y} crimes</b></td></tr>',
+                footerFormat: '</table>',
+                shared: true,
+                useHTML: true
+            },
+            plotOptions: {
+                column: {
+                    pointPadding: 0.2,
+                    borderWidth: 0
+                }
+            },
+            series: [{
+                name: 'Crime Name',
+                data: [4926, 12736, 148951, 184370, 359615, 1024750, 233648, 10623]
+    
+            }]
+        });
+    });
+    
+
+    
+
+    
+});
+
+</script>
+    
+    
+    
+    
+  </body>
+</html>

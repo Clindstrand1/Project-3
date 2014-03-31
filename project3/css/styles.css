@@ -1,0 +1,168 @@
+#E6505C dark red
+#FF8287 light red
+#C4C4C4 gray
+
+body{
+    padding-top:50px;
+}
+
+@font-face {
+    font-family: interstateregular;
+    src: url(../fonts/headline.otf);
+}
+
+@font-face {
+    font-family: headline;
+    src: url(../fonts/InterstateBlackCondensed.ttf);
+
+}
+@font-face {
+    font-family: oldcentury;
+    src: url(../fonts/century-oldstyle-bt.ttf);
+
+}
+.style {
+    color: red;
+}
+
+a{
+    color: #E6505C;
+}
+
+a:hover{
+    color: black;
+}
+
+h1{
+    font-family: headline;
+    padding-left: 20px;
+}
+
+text{
+    font-family: interstateregular;
+}
+
+label{
+    font-family: interstateregular;
+}
+
+.bottomtext{
+    font-family: interstateregular;
+}
+
+.tabletop{
+    padding-top: 20px;
+    padding-bottom: 35px;
+
+}
+
+.highcharts-yaxis-title{
+    color: black;
+}
+element.style {
+color: black;
+}
+
+td{
+    font-family: interstateregular;
+}
+
+.sorting_asc{
+    font-family: headline;
+}
+
+.sorting{
+    font-family: headline;
+}
+
+.container{
+    background-color:white;
+    width: 90%;
+    border-radius: 5px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.introtext{
+    font-family: oldcentury;
+    font-size: 14px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#mysection1 {
+    font-family: oldcentury;
+    font-size: 20px;
+}
+#mysection2 {
+    font-family: oldcentury;
+    font-size: 20px;
+}
+#mysection3 {
+    font-family: oldcentury;
+    font-size: 20px;
+}
+
+.sidebartext{
+    font-family: oldcentury;
+    font-size: 14px;
+}
+
+.source{
+    font-family: oldcentury;
+    font-size: 11px;
+}
+
+.nav{
+    font-family: interstateregular;
+}
+
+.sidebar{
+    padding:10px;
+    margin-left: 5px;
+    margin-top:10px;
+    border-radius: 5px;
+    background-color: #e9e9e9;
+}
+
+body{
+    background-image: url(../images/crossed_stripes.png);
+}
+
+.floatRight{
+    float:right;
+    border: 1px solid black;
+    margin-top:20px;
+}
+
+.floatLeft{
+    float:left;
+    border: 1px solid black;
+    display: inline;
+}
+
+.characters p {
+	margin: 1em 0 0 0;
+	padding: 0px;
+}
+
+ul.characters {
+	list-style: none;
+	margin-top:0px;
+	margin-left: 0;
+	padding-left: 1em;
+	padding-bottom:0px;
+	border-bottom: 1px dotted #666;
+	font-size:125%;
+	
+	
+	
+}
+
+ul.characters h3{
+	margin-bottom:0px;
+	padding:0px;
+	color:#2779aa;	
+}
+
+
